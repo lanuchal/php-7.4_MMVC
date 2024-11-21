@@ -1,0 +1,30 @@
+.sidebar-nav {
+}
+
+.sidebar-nav::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar-nav::-webkit-scrollbar-track {
+  background: none;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+  background-color: #e3e3e3;
+  border-radius: 20px;
+  border: 1px solid #172532;
+}
+
+a:active {
+  background-color: #008789 !important;
+}
+
+.form-check-input:checked {
+  background-color: #008789 !important;
+  border-color: #008789 !important;
+}
+
+.icon-btn:hover {
+  color: #008789;
+}
+

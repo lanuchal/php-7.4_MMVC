@@ -1,0 +1,6 @@
+RewriteEngine On
+# ถ้าไฟล์หรือโฟลเดอร์มีอยู่จริง ให้ส่งไปตามปกติ
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# ส่งคำขอทั้งหมดไปยัง index.php
+RewriteRule ^(.*)$ index.php [L]
