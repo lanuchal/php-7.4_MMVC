@@ -1,25 +1,51 @@
-<section class="d-flex d-xl-flex align-items-center align-items-xl-center"
-    style="min-height: 100vh;min-width: 100%;"><img class="img-fluid" style="position: absolute;max-height: 70%;"
-        src="/assets/img/13106150_5133405.jpg" height="70%">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-lg-6"></div>
-            <div
-                class="col-md-12 col-lg-6 d-flex d-sm-flex d-lg-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-lg-center align-items-lg-center">
-                <div class="card bg-body-tertiary border-0 shadow-lg d-sm-flex justify-content-sm-center align-items-sm-center"
-                    data-aos="fade-left" data-aos-duration="1000" style="max-width: 25rem;width: 100%;">
-                    <div class="card-body"><img src="/assets/img/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ__3_-removebg-preview.png"
-                            width="100%">
-                        <h3 class="fw-bold text-center text-primary card-title" style="margin: 0;margin-top: 1rem;">
-                            ระบบแจ้งซ่อม IT ( Helpdesk )</h3>
-                        <form style="padding: 1rem;"><label class="form-label">รหัสพนักงาน</label><input
-                                class="form-control" type="text" required=""><label class="form-label"
-                                style="margin-top: 0.5rem;">รหัสผ่าน</label><input class="form-control"
-                                type="password"><a class="btn btn-primary link-light" role="button"
-                                style="width: 100%;margin-top: 2rem;" href="/dashboard/createJob">เข้าสู่ระบบ</a></form>
+<div
+    class="relative flex min-h-screen items-center justify-center bg-cover bg-center bg-no-repeat px-20 py-10 dark:bg-[#060818] sm:px-2">
+
+    <div
+        class="relative w-full max-w-[550px] rounded-md bg-[linear-gradient(45deg,#fff9f9_0%,rgba(255,255,255,0)_25%,rgba(255,255,255,0)_75%,_#fff9f9_100%)] p-2 dark:bg-[linear-gradient(52.22deg,#0E1726_0%,rgba(14,23,38,0)_18.66%,rgba(14,23,38,0)_51.04%,rgba(14,23,38,0)_80.07%,#0E1726_100%)]">
+        <div
+            class="relative flex flex-col justify-center rounded-md bg-white/60 backdrop-blur-lg dark:bg-black/50 px-6 lg:min-h-[500px] py-20">
+
+            <div class="mx-auto w-full max-w-[440px]">
+                <div class="flex items-center mb-8">
+                    <div class="me-4">
+                        <img src="/assets/favicon.png" alt="" class="min-h-24 h-24">
+                    </div>
+                    <div class="">
+                        <h1 class="text-3xl font-extrabold uppercase !leading-snug text-primary md:text-4xl">เข้าสู่ระบบ</h1>
+                        <p class="text-base font-bold leading-normal text-white-dark mt-2">กรอกรหัสผู้ใช้งานและรหัสผ่านเพื่อเข้าสู่ระบบ</p>
                     </div>
                 </div>
+                <!-- <form class="space-y-5 dark:text-white" action="/dashboard/sale"> -->
+                <div>
+                    <!-- <label for="UserID">รหัสผู้ใช้งาน</label> -->
+                    <div class="relative text-white-dark">
+                        <input id="UserID" type="text" placeholder="กรอกรหัสผู้ใช้งาน"
+                            class="form-input ps-10 placeholder:text-white-dark" />
+                        <span class="absolute start-4 top-1/2 -translate-y-1/2">
+                            <i class="bx bxs-user mt-2/3"></i>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <!-- <label for="Password">รหัสผ่าน</label> -->
+                    <div class="relative text-white-dark">
+                        <input id="Password" type="password" placeholder="กรอกรหัสผ่าน"
+                            class="form-input ps-10 placeholder:text-white-dark" />
+                        <span class="absolute start-4 top-1/2 -translate-y-1/2">
+                            <i class="bx bxs-lock"></i>
+                        </span>
+                    </div>
+                </div>
+                <a href="/dashboard/sale" class="btn btn-primary !mt-6 w-full border-0 uppercase shadow-[0_10px_20px_-10px_rgba(67,97,238,0.44)]">
+                    เข้าสู่ระบบ
+                </a>
+                <!-- <button type="submit"
+                    class="btn btn-primary !mt-6 w-full border-0 uppercase shadow-[0_10px_20px_-10px_rgba(67,97,238,0.44)]">
+                    เข้าสู่ระบบ
+                </button> -->
+                <!-- </form> -->
             </div>
         </div>
     </div>
-</section>
+</div>

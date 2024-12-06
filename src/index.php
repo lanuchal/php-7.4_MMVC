@@ -18,14 +18,25 @@ $controller = $parts[1] ? $parts[1] : "login";
 $controllerFile = ROOT_PATH . '/modules/' . $module . '/controller/' . $controller . '.php';
 $layoutFile = ROOT_PATH . '/modules/' . $module . '/layout.php';
 
-
-if (file_exists($controllerFile) && file_exists($layoutFile)) {
+if (file_exists($layoutFile)) {
     ob_start();
-    include $controllerFile;
-    $content = ob_get_clean();
+    if (file_exists($controllerFile)) {
+        include $controllerFile;
+        $content = ob_get_clean();
+    } else {
+        $content = "ไม่เจอหน้านี้";
+    }
     include $layoutFile;
     exit;
 }
+
+// if (file_exists($controllerFile) && file_exists($layoutFile)) {
+//     ob_start();
+//     include $controllerFile;
+//     $content = ob_get_clean();
+//     include $layoutFile;
+//     exit;
+// }
 
 // url not found
 http_response_code(404);
